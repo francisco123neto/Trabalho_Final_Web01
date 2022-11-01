@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+<section class="conteiner">
+    <img src="img/urna.png" width="450" class= "urna">
+    <div id = "titulo"></div>
+    <ul class= "alter" onclick="audio.play()">
+        <li class="alternativa"></li>
+        <li class="alternativa" id= "cor"></li>
+    </ul>
+    <div id ="result"></div>
+    <div id = "pontos"></div> 
+</section>
+
+</body>
+</html>
+
+
+<script src = "script.js"></script>
+<style src = "css/estilo.css"></style>
+
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   #titulo{
+      position: absolute;
+      position: fixed; 
+      text-align: center;
+      top: 250px;
+      left: 310px;
+      width: 250px;
+      line-height: 30px;
+      height: 30px;
+   }
+    .alternativa{
+        text-decoration: none;
+        border-radius: 5px;
+        width: 75px;
+        text-align: center;
+        padding: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 9px;
+        background-color: #43A047;
+        color: #fff;
+
+    }
+    .alter #cor{
+        text-decoration: none;
+        border-radius: 5px;
+        width: 75px;
+        text-align: center;
+        padding: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 9px;
+        background-color: #a04343;
+        color: #fff; 
+        
+    }
+    .conteiner{
+        position: fixed;
+        width: 800px;
+        margin: auto;
+    }
+    .conteiner img{
+        position: fixed;
+        top: 180px;
+        left: 290px;
+        border: 5px solid black;
+    }
+
+    .alter{
+        position: absolute;
+        position: fixed;
+        display: flex;
+        list-style-type: none;
+        top: 67%;
+        left: 53%;
+        padding-left: 5px;
+    }
+    .alternativa:hover{
+        cursor: pointer;
+        opacity: 10;
+    }
+    #pontos{
+        position: fixed;
+        top: 85%;
+        left: 42%;
+    }
+    #result{
+        position: fixed;
+        top: 90%;
+        left: 37%;
+        text-align: center;
+    }
+  
+</style>
+<script type="text/javascript">
+    const audio = new Audio();
+    audio.src = "./click.mp3";
+</script>
