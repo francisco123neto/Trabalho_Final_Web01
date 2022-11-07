@@ -1,0 +1,153 @@
+@media(min-width:800){
+     * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+
+    }
+
+    header {
+        width: auto;
+        height: 80px;
+    }
+
+    header nav {
+        width: 100%;
+        height: 80px;
+        line-height: 75px;
+        padding: 0px 100px;
+        position: fixed;
+        background-image: linear-gradient(#e39322, #e39322);
+    }
+
+    header nav ul {
+        float: right;
+    }
+
+    header nav li {
+        display: inline-block;
+        list-style: none;
+
+    }
+
+    header .nav-list li a {
+        color: black;
+        padding-left: 14px;
+        padding-right: 16px;
+        padding: 10px;
+        text-decoration: none;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 600;
+    }
+
+    header nav .logo {
+        height: 100%;
+        list-style: none;
+
+    }
+
+    /*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+    main {
+        display: flex;
+        margin: 20px 150px 0px 200px;
+        flex-direction: row;
+        font-size: larger;
+        padding-bottom: 30px;
+    }
+
+    main nav {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 15px 0px 15px;
+    }
+
+    main .principal {
+        width: 70%;
+    }
+
+    main .principal h1 {
+        text-align: center;
+    }
+
+    main .auxiliar {
+        width: 30%;
+
+    }
+
+    main nav img {
+        width: 80%;
+        align-self: center;
+        padding: 20px 0 20px 0;
+    }
+
+    main nav h1 {
+        padding: 10px;
+    }
+
+    main nav p {
+        text-align: justify;
+        text-indent: 3%;
+        font-family: ReithSans, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        padding: 10px;
+    }
+
+    main nav ul {
+        padding: 10px;
+        padding-left: 10%;
+    }
+}
+
+@media(max-width:768px){
+    main {
+        display: flex;
+        flex-direction: column;
+        font-size:medium;
+        padding-bottom: 10px;
+    }
+
+    main nav {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    main .principal {
+        width: 100%;
+    }
+
+    main .principal h1 {
+        text-align: center;
+    }
+
+    main .auxiliar {
+        width: 100%;
+
+    }
+
+    main nav img {
+        width: 80%;
+        align-self: center;
+        padding: 20px 0 20px 0;
+    }
+
+    main nav h1 {
+        padding: 10px;
+    }
+
+    main nav p {
+        text-align: justify;
+        text-indent: 3%;
+        font-family: ReithSans, Helvetica, Arial, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        padding: 10px;
+    }
+
+    main nav ul {
+        padding: 10px;
+        padding-left: 10%;
+    }
+}
