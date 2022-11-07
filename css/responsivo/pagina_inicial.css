@@ -1,153 +1,165 @@
-@media(min-width:800){
-     * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 
-    }
-
-    header {
-        width: auto;
-        height: 80px;
-    }
-
-    header nav {
-        width: 100%;
-        height: 80px;
-        line-height: 75px;
-        padding: 0px 100px;
-        position: fixed;
-        background-image: linear-gradient(#e39322, #e39322);
-    }
-
-    header nav ul {
-        float: right;
-    }
-
-    header nav li {
-        display: inline-block;
-        list-style: none;
-
-    }
-
-    header .nav-list li a {
-        color: black;
-        padding-left: 14px;
-        padding-right: 16px;
-        padding: 10px;
-        text-decoration: none;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-weight: 600;
-    }
-
-    header nav .logo {
-        height: 100%;
-        list-style: none;
-
-    }
-
-    /*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
-
-    main {
-        display: flex;
-        margin: 20px 150px 0px 200px;
-        flex-direction: row;
-        font-size: larger;
-        padding-bottom: 30px;
-    }
-
-    main nav {
-        display: flex;
-        flex-direction: column;
-        padding: 0px 15px 0px 15px;
-    }
-
-    main .principal {
-        width: 70%;
-    }
-
-    main .principal h1 {
-        text-align: center;
-    }
-
-    main .auxiliar {
-        width: 30%;
-
-    }
-
-    main nav img {
-        width: 80%;
-        align-self: center;
-        padding: 20px 0 20px 0;
-    }
-
-    main nav h1 {
-        padding: 10px;
-    }
-
-    main nav p {
-        text-align: justify;
-        text-indent: 3%;
-        font-family: ReithSans, Helvetica, Arial, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        padding: 10px;
-    }
-
-    main nav ul {
-        padding: 10px;
-        padding-left: 10%;
-    }
 }
 
-@media(max-width:768px){
-    main {
-        display: flex;
-        flex-direction: column;
-        font-size:medium;
-        padding-bottom: 10px;
-    }
+header {
+    width: auto;
+    height: 80px;
+}
 
-    main nav {
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-    }
+header nav {
+    width: 100%;
+    height: 80px;
+    line-height: 75px;
+    padding: 0px 100px;
+    position: fixed;
+    background-image: linear-gradient(#e39322, #e39322);
+}
 
-    main .principal {
-        width: 100%;
-    }
+header nav ul {
+    float: right;
+}
 
-    main .principal h1 {
-        text-align: center;
-    }
+header nav li {
+    display: inline-block;
+    list-style: none;
 
-    main .auxiliar {
-        width: 100%;
+}
 
-    }
+header .nav-list li a {
+    color: black;
+    padding-left: 14px;
+    padding-right: 16px;
+    padding: 10px;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
 
-    main nav img {
-        width: 80%;
-        align-self: center;
-        padding: 20px 0 20px 0;
-    }
+header nav .logo {
+    height: 100%;
+    list-style: none;
 
-    main nav h1 {
-        padding: 10px;
-    }
+}
 
-    main nav p {
-        text-align: justify;
-        text-indent: 3%;
-        font-family: ReithSans, Helvetica, Arial, sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        padding: 10px;
-    }
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-    main nav ul {
-        padding: 10px;
-        padding-left: 10%;
-    }
+main {
+    display: flex;
+    margin: 20px 150px 0px 200px;
+    flex-direction: row;
+    font-size: larger;
+    padding-bottom: 30px;
+}
+
+main nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px 0px 15px;
+}
+
+main .principal {
+    width: 70%;
+}
+
+main .principal h1 {
+    text-align: center;
+}
+
+main .auxiliar {
+    width: 30%;
+
+}
+
+main nav img {
+    width: 80%;
+    align-self: center;
+    padding: 20px 0 20px 0;
+}
+
+main nav h1 {
+    padding: 10px;
+}
+
+main nav p {
+    text-align: justify;
+    text-indent: 3%;
+    font-family: ReithSans, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px;
+}
+
+main nav ul {
+    padding: 10px;
+    padding-left: 10%;
+}
+
+.auxiliar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 15px;
+    margin-top: 0;
+}
+
+.auxiliar nav {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    border: outset 1px #e39322;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.auxiliar h1{
+    height: auto;
+    padding-bottom: 15px;
+}
+
+.auxiliar a {
+    display: block;
+    padding: 10px 0px;
+    text-decoration: none;
+    color: #222;
+    font-size: 1.2em;
+}
+
+.auxiliar a:hover {
+    background-color: white;
+}
+
+
+
+@media(max-width:1280px) {
+main {
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    padding: 5px;
+    width: 100%;
+    margin: 0;
+}
+
+main nav {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+main .principal{
+    width: 100%;
+}
+main .auxiliar{
+    width: 100%;
+}
+
+main nav p {
+    text-align: justify;
+    text-indent: 3%;
+    font-family: ReithSans, Helvetica, Arial, sans-serif;
+    font-weight: auto;
+    font-style: normal;
+}
 }
